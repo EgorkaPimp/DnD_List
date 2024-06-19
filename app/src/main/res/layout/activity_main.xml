@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/HelloWord"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/shape_pers"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bm"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/shape_tw_bm"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_tw_bm"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/bm" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_tw_bm"
+            app:layout_constraintStart_toEndOf="@+id/bm"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_tw_bm"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/blu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/blu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/textView5"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/shape_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        <EditText
+            android:id="@+id/textView7"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/shape_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/shape_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Strength"
+        style="@style/style_cl_specifications"
+        android:background="@drawable/shape_ll_strength"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HelloWord">
+
+        <TextView
+            android:id="@+id/TVStrength"
+            style="@style/style_tw_specification_name"
+            android:text="@string/SpecificationsStrength"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/LLStrength"
+            style="@style/style_ll_specification_mod"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVStrength">
+
+            <TextView
+                android:id="@+id/modValueStrength"
+                style="@style/style_tw_specification_mod_value"
+                 />
+            <TextView
+                style="@style/style_tw_specification_mod"
+                android:text="@string/WordMod"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            style="@style/style_ll_specification_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVStrength">
+
+            <TextView
+                android:id="@+id/saveValueStrength"
+                style="@style/style_tw_specification_mod_value" />
+
+            <TextView
+                android:id="@+id/saveStrength"
+                style="@style/style_tw_specification_mod"
+                android:text="save"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/modStrength"
+            style="@style/style_tw_specification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LLStrength" />
+
+        <Button
+            android:id="@+id/strengthPlus"
+            style="@style/style_b"
+            android:text="@string/WordPlus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modStrength" />
+        <Button
+            android:id="@+id/strengthMinus"
+            style="@style/style_b"
+            android:text="@string/WordMinus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/modStrength"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueAthletics"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/Strength"
+        app:layout_constraintTop_toBottomOf="@+id/HelloWord" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Athletics"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_strength"
+        app:layout_constraintStart_toEndOf="@+id/valueAthletics"
+        app:layout_constraintTop_toBottomOf="@+id/HelloWord">
+
+        <TextView
+            android:id="@+id/modAthletics"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tAthletics"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsStrengthAthletics"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modAthletics"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Dexterity"
+        style="@style/style_cl_specifications"
+        android:background="@drawable/shape_ll_dexterity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Strength">
+
+        <TextView
+            android:id="@+id/TVDexterity"
+            style="@style/style_tw_specification_name"
+            android:text="@string/SpecificationsDexterity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/LLDexterity"
+            style="@style/style_ll_specification_mod"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVDexterity">
+
+            <TextView
+                android:id="@+id/modValueDexterity"
+                style="@style/style_tw_specification_mod_value" />
+            <TextView
+                style="@style/style_tw_specification_mod"
+                android:text="@string/WordMod"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_ll_specification_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVDexterity">
+
+            <TextView
+                android:id="@+id/saveValueDexterity"
+                style="@style/style_tw_specification_mod_value" />
+            <TextView
+                android:id="@+id/saveDexterity"
+                style="@style/style_tw_specification_mod"
+                android:text="save"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/modDexterity"
+            style="@style/style_tw_specification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LLDexterity" />
+        <Button
+            android:id="@+id/dexterityPlus"
+            style="@style/style_b"
+            android:text="@string/WordPlus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modDexterity" />
+        <Button
+            android:id="@+id/dexterityMinus"
+            style="@style/style_b"
+            android:text="@string/WordMinus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/modDexterity"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueAcrobatics"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/Dexterity"
+        app:layout_constraintTop_toBottomOf="@+id/valueAthletics" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Acrobatics"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_dexterity"
+        app:layout_constraintStart_toEndOf="@+id/valueAcrobatics"
+        app:layout_constraintTop_toBottomOf="@+id/Athletics">
+
+        <TextView
+            android:id="@+id/modAcrobatics"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tAcrobatics"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsDexterityAcrobatics"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modAcrobatics"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueSleightOfHand"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/Dexterity"
+        app:layout_constraintTop_toBottomOf="@+id/valueAcrobatics" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/SleightOfHand"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_dexterity"
+        app:layout_constraintStart_toEndOf="@+id/valueSleightOfHand"
+        app:layout_constraintTop_toBottomOf="@+id/Acrobatics">
+
+        <TextView
+            android:id="@+id/modSleightOfHand"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tSleightOfHand"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsDexteritySleightOfHand"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modSleightOfHand"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueStealth"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/Dexterity"
+        app:layout_constraintTop_toBottomOf="@+id/valueSleightOfHand" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Stealth"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_dexterity"
+        app:layout_constraintStart_toEndOf="@+id/valueStealth"
+        app:layout_constraintTop_toBottomOf="@+id/SleightOfHand">
+
+        <TextView
+            android:id="@+id/modStealth"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tStealth"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsDexterityStealth"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modStealth"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        style="@style/style_cl_specifications"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dexterity">
+
+        <TextView
+            android:id="@+id/TVConstitution"
+            style="@style/style_tw_specification_name"
+            android:text="@string/SpecificationsConstitution"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/LLConstitution"
+            style="@style/style_ll_specification_mod"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVConstitution">
+
+            <TextView
+                android:id="@+id/modValueConstitution"
+                style="@style/style_tw_specification_mod_value" />
+            <TextView
+                style="@style/style_tw_specification_mod"
+                android:text="@string/WordMod"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_ll_specification_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVConstitution">
+
+            <TextView
+                android:id="@+id/saveValueConstitution"
+                style="@style/style_tw_specification_mod_value" />
+            <TextView
+                android:id="@+id/saveConstitution"
+                style="@style/style_tw_specification_mod"
+                android:text="save"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/modConstitution"
+            style="@style/style_tw_specification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LLConstitution" />
+        <Button
+            android:id="@+id/constitutionPlus"
+            style="@style/style_b"
+            android:text="@string/WordPlus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modConstitution" />
+        <Button
+            android:id="@+id/constitutionMinus"
+            style="@style/style_b"
+            android:text="@string/WordMinus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/modConstitution"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        style="@style/style_cl_specifications"
+        android:background="@drawable/shape_ll_intelligence"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <TextView
+            android:id="@+id/TVIntelligence"
+            style="@style/style_tw_specification_name"
+            android:text="@string/SpecificationsIntelligence"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/LLIntelligence"
+            style="@style/style_ll_specification_mod"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVIntelligence">
+
+            <TextView
+                android:id="@+id/modValueIntelligence"
+                style="@style/style_tw_specification_mod_value" />
+            <TextView
+                style="@style/style_tw_specification_mod"
+                android:text="@string/WordMod"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_ll_specification_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVIntelligence">
+
+            <TextView
+                android:id="@+id/saveValueIntelligence"
+                style="@style/style_tw_specification_mod_value" />
+            <TextView
+                android:id="@+id/saveIntelligence"
+                style="@style/style_tw_specification_mod"
+                android:text="save"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/modIntelligence"
+            style="@style/style_tw_specification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LLIntelligence" />
+        <Button
+            android:id="@+id/intelligencePlus"
+            style="@style/style_b"
+            android:text="@string/WordPlus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modIntelligence" />
+        <Button
+            android:id="@+id/intelligenceMinus"
+            style="@style/style_b"
+            android:text="@string/WordMinus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/modIntelligence"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueArcana"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/valueStealth" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Arcana"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_intelligence"
+        app:layout_constraintStart_toEndOf="@+id/valueArcana"
+        app:layout_constraintTop_toBottomOf="@+id/Stealth">
+
+        <TextView
+            android:id="@+id/modArcana"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tArcana"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsIntelligenceArcana"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modArcana"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueHistory"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/valueArcana" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/History"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_intelligence"
+        app:layout_constraintStart_toEndOf="@+id/valueHistory"
+        app:layout_constraintTop_toBottomOf="@+id/Arcana">
+
+        <TextView
+            android:id="@+id/modHistory"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tHistory"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsIntelligenceHistory"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modHistory"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueInvestigation"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/valueHistory" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Investigation"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_intelligence"
+        app:layout_constraintStart_toEndOf="@+id/valueInvestigation"
+        app:layout_constraintTop_toBottomOf="@+id/History">
+
+        <TextView
+            android:id="@+id/modInvestigation"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tInvestigation"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsIntelligenceInvestigation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modInvestigation"
+            app:layout_constraintTop_toTopOf="parent" />
+            
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueNature"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/valueInvestigation" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Nature"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_intelligence"
+        app:layout_constraintStart_toEndOf="@+id/valueNature"
+        app:layout_constraintTop_toBottomOf="@+id/Investigation">
+
+        <TextView
+            android:id="@+id/modNature"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tNature"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsIntelligenceNature"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modNature"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueReligion"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/valueNature" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Religion"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_intelligence"
+        app:layout_constraintStart_toEndOf="@+id/valueReligion"
+        app:layout_constraintTop_toBottomOf="@+id/Nature">
+
+        <TextView
+            android:id="@+id/modReligion"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tReligion"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsIntelligenceReligion"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modReligion"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        style="@style/style_cl_specifications"
+        android:background="@drawable/shape_ll_wisdom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+        <TextView
+            android:id="@+id/TVWisdom"
+            style="@style/style_tw_specification_name"
+            android:text="@string/SpecificationsWisdom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/LLWisdom"
+            style="@style/style_ll_specification_mod"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVWisdom">
+
+            <TextView
+                android:id="@+id/modValueWisdom"
+                style="@style/style_tw_specification_mod_value" />
+            <TextView
+                style="@style/style_tw_specification_mod"
+                android:text="@string/WordMod"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_ll_specification_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVWisdom">
+
+            <TextView
+                android:id="@+id/saveValueWisdom"
+                style="@style/style_tw_specification_mod_value" />
+            <TextView
+                android:id="@+id/saveWisdom"
+                style="@style/style_tw_specification_mod"
+                android:text="save"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/modWisdom"
+            style="@style/style_tw_specification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LLWisdom" />
+        <Button
+            android:id="@+id/wisdomPlus"
+            style="@style/style_b"
+            android:text="@string/WordPlus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modWisdom" />
+        <Button
+            android:id="@+id/wisdomMinus"
+            style="@style/style_b"
+            android:text="@string/WordMinus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/modWisdom"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueAnimal"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/valueReligion" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Anumal"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_wisdom"
+        app:layout_constraintStart_toEndOf="@+id/valueAnimal"
+        app:layout_constraintTop_toBottomOf="@+id/Religion" >
+
+        <TextView
+            android:id="@+id/modAnimal"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tAnimal"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsWisdomAnimalHandling"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modAnimal"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueInsight"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/valueAnimal" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Insight"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_wisdom"
+        app:layout_constraintStart_toEndOf="@+id/valueInsight"
+        app:layout_constraintTop_toBottomOf="@+id/Anumal">
+
+        <TextView
+            android:id="@+id/modInsight"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tInsight"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsWisdomInsight"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modInsight"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueMedicine"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/valueInsight" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Medicine"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_wisdom"
+        app:layout_constraintStart_toEndOf="@+id/valueMedicine"
+        app:layout_constraintTop_toBottomOf="@+id/Insight">
+
+        <TextView
+            android:id="@+id/modMedicine"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tMedicine"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsWisdomMedicine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modMedicine"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valuePerception"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/valueMedicine" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Perception"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_wisdom"
+        app:layout_constraintStart_toEndOf="@+id/valuePerception"
+        app:layout_constraintTop_toBottomOf="@+id/Medicine">
+
+        <TextView
+            android:id="@+id/modPerception"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tPerception"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsWisdomPerception"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modPerception"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueSurvival"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/valuePerception" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Survival"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_wisdom"
+        app:layout_constraintStart_toEndOf="@+id/valueSurvival"
+        app:layout_constraintTop_toBottomOf="@+id/Perception">
+
+        <TextView
+            android:id="@+id/modSurvival"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tSurvival"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsWisdomSurvival"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modSurvival"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        style="@style/style_cl_specifications"
+        android:background="@drawable/shape_ll_charisma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+        <TextView
+            android:id="@+id/TVCharisma"
+            style="@style/style_tw_specification_name"
+            android:text="@string/SpecificationsCharisma"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/LLCharisma"
+            style="@style/style_ll_specification_mod"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVCharisma">
+
+            <TextView
+                android:id="@+id/modValueCharisma"
+                style="@style/style_tw_specification_mod_value" />
+
+            <TextView
+                style="@style/style_tw_specification_mod"
+                android:text="@string/WordMod"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_ll_specification_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVCharisma">
+
+            <TextView
+                android:id="@+id/saveValueCharisma"
+                style="@style/style_tw_specification_mod_value" />
+
+            <TextView
+                android:id="@+id/saveCharisma"
+                style="@style/style_tw_specification_mod"
+                android:text="save"
+                 />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/modCharisma"
+            style="@style/style_tw_specification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LLCharisma" />
+
+        <Button
+            android:id="@+id/charismaPlus"
+            style="@style/style_b"
+            android:text="@string/WordPlus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modCharisma" />
+
+        <Button
+            android:id="@+id/charismaMinus"
+            style="@style/style_b"
+            android:text="@string/WordMinus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/modCharisma"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueConviction"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/valueSurvival" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Conviction"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_charisma"
+        app:layout_constraintStart_toEndOf="@+id/valueConviction"
+        app:layout_constraintTop_toBottomOf="@+id/Survival">
+
+        <TextView
+            android:id="@+id/modConviction"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tConviction"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsCharismaConviction"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modConviction"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueDeception"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/valueConviction" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Deception"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_charisma"
+        app:layout_constraintStart_toEndOf="@+id/valueDeception"
+        app:layout_constraintTop_toBottomOf="@+id/Conviction">
+
+        <TextView
+            android:id="@+id/modDeception"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tDeception"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsCharismaDeception"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modDeception"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valueIntimidation"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/valueDeception" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Intimidation"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_charisma"
+        app:layout_constraintStart_toEndOf="@+id/valueIntimidation"
+        app:layout_constraintTop_toBottomOf="@+id/Deception">
+
+        <TextView
+            android:id="@+id/modIntimidation"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tIntimidation"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsCharismaIntimidation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modIntimidation"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/valuePerformance"
+        style="@style/style_tw_value"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/valueIntimidation" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Performance"
+        style="@style/style_cl_skills"
+        android:background="@drawable/shape_ll_charisma"
+        app:layout_constraintStart_toEndOf="@+id/valuePerformance"
+        app:layout_constraintTop_toBottomOf="@+id/Intimidation">
+
+        <TextView
+            android:id="@+id/modPerformance"
+            style="@style/style_tw_mod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tPerformance"
+            style="@style/style_tw_text"
+            android:text="@string/SkillsCharismaPerformance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/modPerformance"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

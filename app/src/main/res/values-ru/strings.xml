@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">DnD_List</string>
+    
+    <!--////// Specifications ///////-->
+    <string name="SpecificationsStrength">Сила</string>
+    <string name="SpecificationsDexterity">Ловкость</string>
+    <string name="SpecificationsConstitution">Телосложение</string>
+    <string name="SpecificationsCharisma">Харизма</string>
+    <string name="SpecificationsIntelligence">Интелект</string>
+    <string name="SpecificationsWisdom">Мудрость</string>
+    
+    ///////Термины////////
+
+    
+    <!--///////Skills////////-->
+    <!--Strength-->
+    <string name="SkillsStrengthAthletics">Атлетика</string>
+    <!--Dexterity-->
+    <string name="SkillsDexterityAcrobatics">Акробатика</string>
+    <string name="SkillsDexteritySleightOfHand">Ловкость рук</string>
+    <string name="SkillsDexterityStealth">Скрытность</string>
+    <!--Intelligence-->
+    <string name="SkillsIntelligenceInvestigation">Анализ</string>
+    <string name="SkillsIntelligenceHistory">История</string>
+    <string name="SkillsIntelligenceArcana">Магия</string>
+    <string name="SkillsIntelligenceNature">Природа</string>
+    <string name="SkillsIntelligenceReligion">Религия</string>
+    <!--Wisdom-->
+    <string name="SkillsWisdomPerception">Восприятие</string>
+    <string name="SkillsWisdomSurvival">Выживание</string>
+    <string name="SkillsWisdomMedicine">Медицина</string>
+    <string name="SkillsWisdomInsight">Проницательность</string>
+    <string name="SkillsWisdomAnimalHandling">Уход за животными</string>
+    <!--Charisma-->
+    <string name="SkillsCharismaPerformance">Выступление</string>
+    <string name="SkillsCharismaIntimidation">Запугивание</string>
+    <string name="SkillsCharismaDeception">Обман</string>
+    <string name="SkillsCharismaConviction">Убеждение</string>
+    <!--List-->
+    <string name="ListCharacterName">Имя</string>
+    <string name="ListClass">Класс</string>
+    <string name="ListSpecies">Раса</string>
+    <string name="ListBackground">Предыстория</string>
+    <string name="ListWorldview">Мировозрение</string>
+    <string name="ListLevel">Уровень</string>
+    <string name="EntranceSignIn">Регистрация</string>
+    <string name="EntranceLogin">Логин</string>
+    <string name="EntrancePassword">Пароль</string>
+    <string name="EntranceGo">Вход</string>
+    <string name="WordMod">Мод</string>
+    <string name="WordSpas">Спас</string>
+    <string name="WordMinus">-</string>
+    <string name="WordPlus">+</string>
+</resources>

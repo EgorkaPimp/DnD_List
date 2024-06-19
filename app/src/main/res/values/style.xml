@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_tw_value">
+        <item name="android:layout_marginStart">22dp</item>
+        <item name="android:background">@drawable/shape_tv_value</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+    <style name="style_cl_skills">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:background">@drawable/shape_ll</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+    <style name="style_tw_mod">
+        <item name="android:background">@drawable/shape_tv_specification</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="style_tw_text">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="style_cl_specifications">
+        <item name="android:layout_width">125dp</item>
+        <item name="android:layout_height">85dp</item>
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:background">@drawable/shape_ll</item>
+    </style>
+    <style name="style_tw_specification_name">
+        <item name="android:layout_width">115dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@drawable/shape_tv_specification</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="style_ll_specification_mod">
+        <item name="android:layout_width">53dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:background">@drawable/shape_tv_specification</item>
+    </style>
+    <style name="style_ll_specification_save">
+        <item name="android:layout_width">53dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:background">@drawable/shape_tv_specification</item>
+    </style>
+    <style name="style_tw_specification_mod_value">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/shape_tv_specification</item>
+    </style>
+    <style name="style_tw_specification_mod">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:text">@string/WordMod</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+    <style name="style_tw_specification">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">10</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="style_b">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:backgroundTint">#3BFFFFFF</item>
+    </style>
+</resources>

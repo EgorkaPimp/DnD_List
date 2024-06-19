@@ -1,0 +1,448 @@
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	
++++ b/app/src/main/res/layout/activity_main.xml	(date 1707895572563)
+@@ -158,13 +158,8 @@
+ 
+         <TextView
+             android:id="@+id/tAthletics"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsStrengthAthletics"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modAthletics"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -306,22 +301,15 @@
+ 
+         <TextView
+             android:id="@+id/modAcrobatics"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tAcrobatics"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsDexterityAcrobatics"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modAcrobatics"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -344,22 +332,15 @@
+ 
+         <TextView
+             android:id="@+id/modSleightOfHand"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tSleightOfHand"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsDexteritySleightOfHand"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modSleightOfHand"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -382,22 +363,15 @@
+ 
+         <TextView
+             android:id="@+id/modStealth"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tStealth"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsDexterityStealth"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modStealth"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -658,22 +632,15 @@
+ 
+         <TextView
+             android:id="@+id/modArcana"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tArcana"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsIntelligenceArcana"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modArcana"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -695,22 +662,15 @@
+ 
+         <TextView
+             android:id="@+id/modHistory"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tHistory"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsIntelligenceHistory"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modHistory"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -732,22 +692,15 @@
+ 
+         <TextView
+             android:id="@+id/modInvestigation"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tInvestigation"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsIntelligenceInvestigation"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modInvestigation"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -771,22 +724,15 @@
+ 
+         <TextView
+             android:id="@+id/modNature"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tNature"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsIntelligenceNature"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modNature"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -808,22 +754,15 @@
+ 
+         <TextView
+             android:id="@+id/modReligion"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tReligion"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsIntelligenceReligion"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modReligion"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -963,22 +902,15 @@
+ 
+         <TextView
+             android:id="@+id/modAnimal"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tAnimal"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsWisdomAnimalHandling"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modAnimal"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -1001,22 +933,15 @@
+ 
+         <TextView
+             android:id="@+id/modInsight"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tInsight"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsWisdomInsight"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modInsight"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -1039,22 +964,15 @@
+ 
+         <TextView
+             android:id="@+id/modMedicine"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tMedicine"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsWisdomMedicine"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modMedicine"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -1076,22 +994,15 @@
+ 
+         <TextView
+             android:id="@+id/modPerception"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tPerception"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsWisdomPerception"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modPerception"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -1113,22 +1024,15 @@
+ 
+         <TextView
+             android:id="@+id/modSurvival"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tSurvival"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsWisdomSurvival"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modSurvival"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -1271,22 +1175,15 @@
+ 
+         <TextView
+             android:id="@+id/modConviction"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tConviction"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsCharismaConviction"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modConviction"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -1309,22 +1206,15 @@
+ 
+         <TextView
+             android:id="@+id/modDeception"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tDeception"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsCharismaDeception"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modDeception"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -1346,22 +1236,15 @@
+ 
+         <TextView
+             android:id="@+id/modIntimidation"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tIntimidation"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsCharismaIntimidation"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modIntimidation"
+             app:layout_constraintTop_toTopOf="parent" />
+@@ -1383,22 +1266,15 @@
+ 
+         <TextView
+             android:id="@+id/modPerformance"
+-            android:layout_width="20dp"
+-            android:layout_height="15dp"
+-            android:background="@drawable/shape_tv"
++            style="@style/style_tw_mod"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+ 
+         <TextView
+             android:id="@+id/tPerformance"
+-            android:layout_width="120dp"
+-            android:layout_height="15dp"
+-            android:gravity="bottom"
+-            android:paddingStart="10dp"
++            style="@style/style_tw_text"
+             android:text="@string/SkillsCharismaPerformance"
+-            android:textColor="@color/black"
+-            android:textSize="10sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toEndOf="@+id/modPerformance"
+             app:layout_constraintTop_toTopOf="parent" />

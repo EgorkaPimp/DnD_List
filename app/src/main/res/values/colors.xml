@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF9090</color>
+    <color name="blu">#9ACAFB</color>
+    <color name="pink">#FD81D4</color>
+    <color name="gres">#C6C6C6</color>
+    <color name="bej">#FFE68C</color>
+    <color name="gren">#9DFF82</color>
+</resources>

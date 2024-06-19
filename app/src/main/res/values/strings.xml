@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">DnD_List</string>
+    
+    <!--////// Specifications ///////-->
+    <string name="SpecificationsStrength">Strength</string>
+    <string name="SpecificationsDexterity">Dexterity</string>
+    <string name="SpecificationsConstitution">Constitution</string>
+    <string name="SpecificationsCharisma">Charisma</string>
+    <string name="SpecificationsIntelligence">Intelligence</string>
+    <string name="SpecificationsWisdom">Wisdom</string>
+    
+    <!--///////Everything else////////-->
+    <!--List-->
+    <string name="ListCharacterName">Name</string>
+    <string name="ListClass">Class</string>
+    <string name="ListSpecies">Species</string>
+    <string name="ListBackground">Background</string>
+    <string name="ListWorldview">Worldview</string>
+    <string name="ListLevel">Level</string>
+
+    <!--Entrance-->
+    <string name="EntranceGo">Go</string>
+    <string name="EntranceSignIn">Sign in</string>
+    <string name="EntranceLogin">Login</string>
+    <string name="EntrancePassword">Password</string>
+
+    <!--///////Skills////////-->
+    <!--Strength-->
+    <string name="SkillsStrengthAthletics">Athletics</string>
+    <!--Dexterity-->
+    <string name="SkillsDexterityAcrobatics">Acrobatics</string>
+    <string name="SkillsDexteritySleightOfHand">Sleight of hand</string>
+    <string name="SkillsDexterityStealth">Stealth</string>
+    <!--Intelligence-->
+    <string name="SkillsIntelligenceInvestigation">Investigation</string>
+    <string name="SkillsIntelligenceHistory">History</string>
+    <string name="SkillsIntelligenceArcana">Arcana</string>
+    <string name="SkillsIntelligenceNature">Nature</string>
+    <string name="SkillsIntelligenceReligion">Religion</string>
+    <!--Wisdom-->
+    <string name="SkillsWisdomPerception">Perception</string>
+    <string name="SkillsWisdomSurvival">Survival</string>
+    <string name="SkillsWisdomMedicine">Medicine</string>
+    <string name="SkillsWisdomInsight">Insight</string>
+    <string name="SkillsWisdomAnimalHandling">Animal handling</string>
+    <!--Charisma-->
+    <string name="SkillsCharismaPerformance">Performance</string>
+    <string name="SkillsCharismaIntimidation">Intimidation</string>
+    <string name="SkillsCharismaDeception">Deception</string>
+    <string name="SkillsCharismaConviction">Conviction</string>
+
+    <!--word-->
+    <string name="WordSpas">Save</string>
+    <string name="WordMod">Mod</string>
+    <string name="WordPlus">+</string>
+    <string name="WordMinus">-</string>
+</resources>
